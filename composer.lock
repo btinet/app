@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bfe15a08492b20fc9cfa83a556ac6b1",
+    "content-hash": "4ae243740e9a9e8378fda61cd599655e",
     "packages": [
         {
             "name": "btinet/simplemvc",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/btinet/simplemvc.git",
-                "reference": "4654f2bce838ce24bff178c4cece950c21d94d3a"
+                "reference": "49c97a745d719e5a1483cadda28ad72aeca1dba9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/btinet/simplemvc/zipball/4654f2bce838ce24bff178c4cece950c21d94d3a",
-                "reference": "4654f2bce838ce24bff178c4cece950c21d94d3a",
+                "url": "https://api.github.com/repos/btinet/simplemvc/zipball/49c97a745d719e5a1483cadda28ad72aeca1dba9",
+                "reference": "49c97a745d719e5a1483cadda28ad72aeca1dba9",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,73 @@
                 }
             ],
             "description": "Simple PHP MVC Framework",
-            "time": "2019-06-11T17:01:21+00:00"
+            "time": "2019-06-12T06:24:02+00:00"
+        },
+        {
+            "name": "scrivo/highlight.php",
+            "version": "v9.15.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scrivo/highlight.php.git",
+                "reference": "2626bf8731737b2487e54bda5a980f0e5a143320"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/2626bf8731737b2487e54bda5a980f0e5a143320",
+                "reference": "2626bf8731737b2487e54bda5a980f0e5a143320",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.7",
+                "symfony/finder": "^2.8"
+            },
+            "suggest": {
+                "ext-dom": "Needed to make use of the features in the utilities namespace"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Highlight\\": "",
+                    "HighlightUtilities\\": ""
+                },
+                "files": [
+                    "HighlightUtilities/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Geert Bergman",
+                    "homepage": "http://www.scrivo.org/",
+                    "role": "Project Author"
+                },
+                {
+                    "name": "Vladimir Jimenez",
+                    "homepage": "https://allejo.io",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Martin Folkers",
+                    "homepage": "https://twobrain.io",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
+            "keywords": [
+                "code",
+                "highlight",
+                "highlight.js",
+                "highlight.php",
+                "syntax"
+            ],
+            "time": "2019-05-31T06:24:05+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -236,6 +302,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.1.0"
+    },
     "platform-dev": []
 }
