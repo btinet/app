@@ -1,0 +1,26 @@
+{
+	{
+	"name": "btinet/app",
+	"type": "Project",
+	"description": "Application for btinet/simplemvc",
+	"homepage": "https://github.com/btinet/app",
+	"license": "MIT",
+	"authors": [{
+		"name": "Benjamin Voigt",
+		"email": "benjamin.voigt@btinet.org",
+		"homepage": "https://www.simplemvc.com/",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=7.1.0",
+		"twig/twig": ">=2.0",
+		"scrivo/highlight.php": "^9.15",
+		"btinet/simplemvc": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {			
+			"App\\Controller\\": "App/Controller/"
+		}
+
+	}
+}
