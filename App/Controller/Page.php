@@ -5,7 +5,6 @@ namespace App\ Controller;
 use Btinet\ SimpleMVC\ Core;
 use Highlight\ Highlighter;
 
-
 class Page extends Core\ Controller {
 
 	public

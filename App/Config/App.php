@@ -8,6 +8,12 @@ define( 'ENVIRONMENT', 'development' ); // Supported: "development", "production
 
 define( 'APPSPACE', 'App\\Controller\\');
 
+define( 'AppName', 'simplemvc' );
+
+define( 'Version', '0.1.0' );
+
+define( 'Copyright', '2019' );
+
 /**
  * Set Public Domain
  */

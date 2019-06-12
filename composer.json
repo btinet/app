@@ -1,7 +1,7 @@
 {
 	{
 	"name": "btinet/app",
-	"type": "Project",
+	"type": "project",
 	"description": "Application for btinet/simplemvc",
 	"homepage": "https://github.com/btinet/app",
 	"license": "MIT",
