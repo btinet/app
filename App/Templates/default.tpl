@@ -10,26 +10,20 @@
 		
 		<link rel="shortcut icon" href="{{ constant('WWW') }}favicon.ico" type="image/x-icon" />
 		
-		<!-- Google Font -->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CPlayfair+Display:400,400i,700,700i%7CRoboto:400,400i,500,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/app/css/bootstrap.css">		
+		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/vendor/font-awesome/css/font-awesome.min.css">	
 		
-		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/bootstrap/css/bootstrap.min.css">	
-		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/fontawesome-free/css/font-awesome.min.css">		
-		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/highlighter/css/default.css">	
-		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/app/css/docs.min.css">	
-		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/app/css/style.css">	
-		<link rel="stylesheet" type="text/css" href="{{ constant('WWW') }}assets/app/css/prettify.css">	
+		<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
 		
 		<title>{{ data.page_title }} - {{ constant('AppName') }}</title>
 		
 		{% endblock %}
 		
 	</head>	
-	<body class="d-flex flex-column h-100">
+	<body class="d-flex flex-column h-100" style="padding-top: 60px;">
 		
-		<div class="preloader">
-		<img  src="{{ constant('WWW') }}assets/images/preloader.svg" alt="Pre-loader">
-	</div>
 		
 		{% block navigation %}{% include 'navigation/navigation.default.tpl' %}{% endblock %}	
 		
@@ -39,11 +33,15 @@
 		
 		<div><a class="back-top btn btn-grad cursor-pointer"><i class="fa fa-arrow-up"></i></a> </div>
 		
-        <script src="{{ constant('WWW') }}assets/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="{{ constant('WWW') }}assets/jquery/jquery.easing.min.js" type="text/javascript"></script>
-        <script src="{{ constant('WWW') }}assets/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
-        <script src="{{ constant('WWW') }}assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>       
-		<script src="{{ constant('WWW') }}assets/app/js/app.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<script>
+		$('.carousel').carousel({
+  interval: 2000
+})
+		</script>
 		
 	</body>
 </html>

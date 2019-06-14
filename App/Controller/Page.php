@@ -11,45 +11,27 @@ class Page extends Core\ Controller {
 
 	function __construct() {
 
-		parent::__construct();
-
+		parent::__construct();		
+		
 	}
 
 	public
 
 	function index() {
-		header( 'Location:' . WWW . 'page/show/home' );
+		header( 'Location:' . WWW . 'page/home' );
 		exit;
+		
 	}
 
 	public
 
-	function show( array $get = NULL, array $post = NULL ) {
+	function home(array $get = NULL, array $post = NULL) {
+		
+		$this->_data['page_title'] = "Willkommen";
+		
+		$view = $this->_view->assign( "home/index" , $this->_data);
 
-		$page = ( isset( $get[ 0 ] ) ) ? $get[ 0 ] : false;
-
-		if ( !$page ) {
-			header( 'Location:' . WWW . 'page/show/home' );
-			exit;
-		};
-
-		$subpage = ( isset( $get[ 1 ] ) ) ? $get[ 1 ] : 'index';
-
-		$this->_data[ 'page_title' ] = $page;
-
-		if ( file_exists( TPATH . "$page/$subpage.tpl" ) ) {
-
-			$template = $this->_template->load( "$page/$subpage.tpl" );
-
-			echo $template->render( [ 'data' => $this->_data ] );
-
-		} else {
-
-			$controller = new Core\ Errors( "Datei nicht gefunden:" );
-
-			$controller->index();
-
-		}
+		echo $view;	
 
 	}
 

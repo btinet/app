@@ -2,39 +2,31 @@
 
 {% block content %}
 
- <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h2 class="display-4">simple<span class="text-white bg-grad ml-1 px-1">mvc</span></h2>
-    <p class="lead">The fast and easy php framework.</p>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://via.placeholder.com/1920x300/09f/fff.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/1920x300/09f/fff.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/1920x300/09f/fff.png" class="d-block w-100" alt="...">
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-
-<!-- =======================
-	about us  -->
-	<section>
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<!-- left -->
-				<div class="col-md-7">
-	<figure class="highlight">				
-<pre><code>{{ data.code.value|raw }}</code></pre>
-					</figure>					
-						
-				</div>
-				<!-- right -->
-				<div class="col-md-5 pl-lg-5">
-					<h2 class="h1">Start a php project with ease!</h2>
-					<p class="lead">Easy setup with the most common functions and libraries.</p>
-					<p>You can modify and extend <b>simple<span class="text-white bg-grad ml-1 px-1">mvc</span></b> with any additional feature. It's very simple to customize.</p>
-					<div>
-						<a href="#" class="btn btn-dark">Documentation</a>
-						<a href="#" class="btn btn-link">Download Now</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- =======================
-	about us  -->
 
 {% endblock %}

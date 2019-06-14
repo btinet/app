@@ -14,7 +14,8 @@
 		"php": ">=7.1.0",
 		"twig/twig": ">=2.0",
 		"scrivo/highlight.php": "^9.15",
-		"btinet/simplemvc": "dev-master"
+		"btinet/simplemvc": "dev-master",
+		"twbs/bootstrap": "4.3.1"
 	},
 	"autoload": {
 		"psr-4": {			
