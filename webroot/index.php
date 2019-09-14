@@ -43,6 +43,7 @@ if ( defined( 'ENVIRONMENT' ) ) {
 
 $app = new SimpleMVC\ Bootstrap();
 
+
 $app->setController( 'Page' );
 
 //--------------------------------------------------------------------------
