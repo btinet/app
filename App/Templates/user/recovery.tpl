@@ -6,7 +6,8 @@
     <div class="uk-container">
    <h3 class="uk-text-center">BTI<span class="uk-text-danger">.net</span> KUBIS</h3>
    <hr>
-   <p class="uk-text-center uk-text-small uk-text-uppercase">system login</p>
+   <p class="uk-text-center uk-text-small uk-text-danger uk-text-uppercase">Passcode Recovery</p>
+   
 <form>
 
    <div class="uk-margin">
@@ -16,19 +17,10 @@
         </div>
     </div>
 
-    <div class="uk-margin">
-        <div class="uk-inline" uk-tooltip="title: Passcode; pos: bottom">
-            <span class="uk-form-icon" uk-icon="icon: lock"></span>
-            <input class="uk-input" type="password">
-        </div>
-    </div>
-    
-    
         <div class="uk-margin">
-           <button class="uk-button uk-button-default uk-width-1-1">Anmelden</button>
+           <button class="uk-button uk-button-danger uk-width-1-1">Passcode zurücksetzen</button>
         </div>
-    
-<a href="{{ constant('WWW') }}user/recovery" class="uk-text-link">Paswort vergessen?</a>
+<a href="{{ constant('WWW') }}user/login" class="uk-text-link">Zurück zum Login</a>
 </form>
 
 
