@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/btinet/simplemvc.git",
-                "reference": "d4a4fe7d40e750a34c6e71b07c78c04312481966"
+                "reference": "da839edd87ebe80b0d64f61facf1d3313c0d2aca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/btinet/simplemvc/zipball/d4a4fe7d40e750a34c6e71b07c78c04312481966",
-                "reference": "d4a4fe7d40e750a34c6e71b07c78c04312481966",
+                "url": "https://api.github.com/repos/btinet/simplemvc/zipball/da839edd87ebe80b0d64f61facf1d3313c0d2aca",
+                "reference": "da839edd87ebe80b0d64f61facf1d3313c0d2aca",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 }
             ],
             "description": "Simple PHP MVC Framework",
-            "time": "2019-09-15T09:45:35+00:00"
+            "time": "2019-09-15T11:35:36+00:00"
         },
         {
             "name": "scrivo/highlight.php",

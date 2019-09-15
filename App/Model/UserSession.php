@@ -15,4 +15,12 @@ class UserSession extends Core\ Model {
 		
 	}
 	
+	public
+
+	function getAccounts() {
+		
+		return $this->_db->select('SELECT * FROM accounts');	
+
+	}
+	
 }
