@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<div class="uk-section uk-flex uk-flex-middle uk-flex-center" uk-height-viewport="expand: true" id="login-form">
+<div class="uk-section uk-flex uk-flex-middle" uk-height-viewport="expand: true" id="login-form">
     <div class="uk-container">
-   <h3 class="uk-text-center">BTI<span class="uk-text-danger">.net</span> KUBIS</h3>
+   <img src="{{ constant('WWW') }}app/img/kubis_logo.svg">
    <hr>
    <p class="uk-text-center uk-text-small uk-text-uppercase">system login</p>
 <form>
@@ -31,16 +31,8 @@
 <a href="{{ constant('WWW') }}user/recovery" class="uk-text-link">Paswort vergessen?</a>
 </form>
 
-<div class="uk-margin">
-<ul class="uk-list">
-    {% for account in data.accounts %}
-        <li><code>{{ account.accountName|e }} <span class="uk-text-success">updated: <b>{{ account.accountUpdated|e }}</b></span></code></li>
-    {% endfor %}
-    </ul>
-</div>
 
    
     </div>
 </div>
-
 {% endblock %}

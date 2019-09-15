@@ -4,7 +4,7 @@
 
 <div class="uk-section uk-flex uk-flex-middle uk-flex-center" uk-height-viewport="expand: true" id="login-form">
     <div class="uk-container">
-   <h3 class="uk-text-center">BTI<span class="uk-text-danger">.net</span> KUBIS</h3>
+   <img src="{{ constant('WWW') }}app/img/kubis_logo.svg">
    <hr>
    <p class="uk-text-center uk-text-small uk-text-danger uk-text-uppercase">Passcode Recovery</p>
    
@@ -18,7 +18,7 @@
     </div>
 
         <div class="uk-margin">
-           <button class="uk-button uk-button-danger uk-width-1-1">Passcode zurücksetzen</button>
+           <button class="uk-button uk-button-danger uk-width-1-1">Passcode anfordern</button>
         </div>
 <a href="{{ constant('WWW') }}user/login" class="uk-text-link">Zurück zum Login</a>
 </form>

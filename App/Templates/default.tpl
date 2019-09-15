@@ -18,7 +18,7 @@
 		<!-- Top Navbar -->
 		{% block navigation %}{% include data.navigation %}{% endblock %}
 		<!-- App root element -->
-		<main>{% block content %}{% endblock %}</main>
+		{% block content %}{% endblock %}
 		<!-- Bottom Toolbar -->
 		<footer>{% block footer %}{% include 'footer.tpl' %}{% endblock %}</footer>
 	</body>
