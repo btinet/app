@@ -38,6 +38,12 @@ date_default_timezone_set( 'Europe/Berlin' );
 
 define( 'CONFIG_STORE', 'database' ); // Supported: "files", "database"
 
+define ( 'DB_TYPE', 'mysql');
+define ( 'DB_HOST', 'localhost');
+define ( 'DB_NAME', 'web83_de01');
+define ( 'DB_USER', 'web83_bvoigt');
+define ( 'DB_PASS', 'Camilla@23');
+
 /**
  * Set absolut working paths.
  */
