@@ -8,7 +8,7 @@ define( 'ENVIRONMENT', 'development' ); // Supported: "development", "production
 
 define( 'APPSPACE', 'App\\Controller\\');
 
-define( 'AppName', 'simplemvc' );
+define( 'AppName', 'BTI.net KUBIS' );
 
 define( 'Version', '0.1.0' );
 
@@ -18,7 +18,7 @@ define( 'Copyright', '2019' );
  * Set Public Domain
  */
 
-define( 'WWW', 'http://localhost/' );
+define( 'WWW', 'https://www.btinet.org/' );
 
 /**
  * Set Session Prefix used for Session and Database.

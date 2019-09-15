@@ -14,9 +14,9 @@
 			<title>{{ data.page_title }} - {{ constant('AppName') }}</title>
 		{% endblock %}
 	</head>	
-	<body>
+	<body class=" uk-background-secondary ">
 		<!-- Top Navbar -->
-		{% block navigation %}{% include 'navigation/navigation.default.tpl' %}{% endblock %}
+		{% block navigation %}{% include data.navigation %}{% endblock %}
 		<!-- App root element -->
 		<main>{% block content %}{% endblock %}</main>
 		<!-- Bottom Toolbar -->

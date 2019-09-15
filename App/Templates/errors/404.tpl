@@ -1,4 +1,3 @@
-{% extends data.parent_template %}
 
 {% block content %}
 

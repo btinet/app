@@ -5,7 +5,7 @@ namespace App\ Controller;
 use Btinet\ SimpleMVC\ Core;
 use Highlight\ Highlighter;
 
-class Page extends Core\ Controller {
+class User extends Core\ Controller {
 
 	public
 
@@ -25,11 +25,12 @@ class Page extends Core\ Controller {
 
 	public
 
-	function home(array $get = NULL, array $post = NULL) {
+	function login(array $get = NULL, array $post = NULL) {
 		
-		$this->_data['page_title'] = "Willkommen";
+		$this->_data['page_title'] = "Login";
+		$this->_data['navigation'] = "navigation/empty.tpl";
 		
-		$view = $this->_view->assign( "home/index" , $this->_data);
+		$view = $this->_view->assign( "user/login" , $this->_data);
 
 		echo $view;	
 
