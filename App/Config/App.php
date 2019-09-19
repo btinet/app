@@ -40,9 +40,9 @@ define( 'CONFIG_STORE', 'database' ); // Supported: "files", "database"
 
 define ( 'DB_TYPE', 'mysql');
 define ( 'DB_HOST', 'localhost');
-define ( 'DB_NAME', 'web83_de01');
-define ( 'DB_USER', 'web83_bvoigt');
-define ( 'DB_PASS', 'Camilla@23');
+define ( 'DB_NAME', 'test');
+define ( 'DB_USER', 'root');
+define ( 'DB_PASS', '');
 
 /**
  * Set absolut working paths.
