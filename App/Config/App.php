@@ -18,7 +18,7 @@ define( 'Copyright', '2019' );
  * Set Public Domain
  */
 
-define( 'WWW', 'https://www.btinet.org/' );
+define( 'WWW', 'http://app.test/' );
 
 /**
  * Set Session Prefix used for Session and Database.
