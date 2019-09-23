@@ -14,7 +14,7 @@
 			<title>{{ data.page_title }} - {{ constant('AppName') }}</title>
 		{% endblock %}
 	</head>	
-	<body class="uk-light uk-background-secondary">
+	<body class="uk-dark uk-background-muted">
 		<!-- Top Navbar -->
 		{% block navigation %}{% include data.navigation %}{% endblock %}
 		<!-- App root element -->

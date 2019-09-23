@@ -28,9 +28,11 @@ class User extends Core\ Controller {
 
 	function login(array $get = NULL, array $post = NULL) {
 		
-		$user_session = new Model\UserSession();
-		$this->_data['accounts'] = $user_session->getAccounts();
-		
+		$login = array_pop($post);
+
+		if ( isset( $login ) ) {
+			$this->_user->doLogin( $post );		}
+
 		$this->_data['page_title'] = "Login";
 		$this->_data['navigation'] = "navigation/empty.tpl";
 		

@@ -7,31 +7,29 @@
    <img src="{{ constant('WWW') }}app/img/kubis_logo.svg">
    <hr>
    <p class="uk-text-center uk-text-small uk-text-uppercase">system login</p>
-<form>
+<form action="" method="post">
 
    <div class="uk-margin">
         <div class="uk-inline uk-width-1-1" uk-tooltip="title: Benutzer-ID; pos: bottom">
             <span class="uk-form-icon" uk-icon="icon: user"></span>
-            <input class="uk-input" type="text">
+            <input class="uk-input" type="text" name="accountName" required="required">
         </div>
     </div>
 
     <div class="uk-margin">
         <div class="uk-inline uk-width-1-1" uk-tooltip="title: Passcode; pos: bottom">
             <span class="uk-form-icon" uk-icon="icon: lock"></span>
-            <input class="uk-input" type="password">
+            <input class="uk-input" type="password" name="accountPass" required="required">
         </div>
     </div>
     
     
         <div class="uk-margin">
-           <button class="uk-button uk-button-default uk-width-1-1">Anmelden</button>
+           <button class="uk-button uk-button-default uk-width-1-1" name="login" value="true">Anmelden</button>
         </div>
     
 <a href="{{ constant('WWW') }}user/recovery" class="uk-text-link">Paswort vergessen?</a>
 </form>
-
-
    
     </div>
 </div>

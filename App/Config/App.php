@@ -18,7 +18,7 @@ define( 'Copyright', '2019' );
  * Set Public Domain
  */
 
-define( 'WWW', 'http://app.test/' );
+define( 'WWW', 'http://app.fritz.box/' );
 
 /**
  * Set Session Prefix used for Session and Database.
